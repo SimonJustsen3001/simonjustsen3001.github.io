@@ -23,7 +23,7 @@
       <!-- Intro -->
       <div id="intro">
         <h2>BroBizz Management System</h2>
-        <p>Analysis and implementation of a system to track brobizz</p>
+        <p>Analysis and implementation of a system to manage brobizz devices</p>
         <ul class="actions">
           <li>
             <a
@@ -41,11 +41,14 @@
       <!-- Nav -->
       <nav id="nav">
         <ul class="links">
-          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li class="active"><a href="brobizz.html">BroBizz</a></li>
         </ul>
         <ul class="icons">
           <li>
-            <a href="#" class="icon brands fa-linkedin"
+            <a
+              href="https://www.linkedin.com/in/simon-justsen-19b3951b6/"
+              class="icon brands fa-linkedin"
               ><span class="label">LinkedIn</span></a
             >
           </li>
@@ -74,15 +77,15 @@
           </p>
         </header>
         <section class="post">
-          <h2>Overview of system</h2>
-          <p>
-            The purpose of this system is to facilitate management of BroBizz
-            devices.
-          </p>
-        </section>
-        <section class="post">
           <h2>Analysis</h2>
-          <p>Analysis intro</p>
+          <p>
+            BroBizz devices automatically record transits over all bridges in
+            Denmark. An invoice is sent to the owner of the brobizz after each
+            transit, which includes the bridge, vehicle, time and price of the
+            transit. <br />
+            A system for managing BroBizz devices could therefore have the
+            following specification:
+          </p>
           <h3>Requirement specification</h3>
           <div class="col-6 col-12-small">
             <p>Users should be able to:</p>
@@ -91,37 +94,24 @@
               <li>Add, edit or remove BroBizz from their accounts</li>
               <li>View information about each BroBizz</li>
               <li>See trip details and invoice information</li>
-              <li>Edit their profile details</li>
             </ul>
           </div>
           <div class="row">
             <div class="col-6 col-12-small">
               <h3>Functional requirements:</h3>
               <ul>
-                <li>We need to build a management system for BroBizz</li>
                 <li>
                   Users can add,edit or remove BroBizz from their accounts
                 </li>
                 <li>Users should be able to see their invoice history</li>
                 <li>
                   Each BroBizz may include trips, which are registered when
-                  crossing each bridge
+                  crossing a bridge in Denmark
                 </li>
                 <li>
                   Each trip contains details about time, bridge, vehicle and
                   price of the trip
                 </li>
-              </ul>
-            </div>
-            <div class="col-6 col-12-small">
-              <h3>Non-functional requirements:</h3>
-              <ul>
-                <li>The website must be intuitive to navigate</li>
-                <li>
-                  The website should be able to handle a large number of BroBizz
-                  devices
-                </li>
-                <li>The website must be secure</li>
               </ul>
             </div>
           </div>
@@ -150,21 +140,43 @@
             </div>
           </div>
           <div>
+            <span class="image right"
+              ><img src="images/brobizzUC.png" alt=""
+            /></span>
+            <h3>Use Case Diagram</h3>
             <p>
-              <span class="image right"
-                ><img src="images/brobizzUC.png" alt="" /></span
-              >
-              <h3>Use Case Diagram</h3>
               An important thing to notice about this use case diagram is that
-              it does not model the login/creation process of the system. This
-              was obmitted because, while it is important for the system, it is
-              not important for the core functionality.
+              it does not model the login/creation process of the system.
+              <br />
+              This was obmitted because, while it is important for the system,
+              it is not important for the core functionality.
             </p>
           </div>
           <div>
             <h3>Class Diagram:</h3>
+            <p>
+              As with the use case diagram, the class diagram does not model the
+              login/creation process of the system.
+            </p>
+            <div style="margin-left: auto; margin-right: auto">
+              <span style="margin-left: 24%; margin-right: auto" class="image"
+                ><img src="images/brobizzCD.png" alt=""
+              /></span>
+            </div>
           </div>
         </section>
+        <ul class="actions special">
+          <li>
+            <a href="brobizz.html" class="button large">Demo</a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/SimonJustsen3001/BroBizz"
+              class="button large icon brands fa-github"
+              >BroBizz Project</a
+            >
+          </li>
+        </ul>
         <!-- Featured Post -->
 
         <!-- Posts -->
@@ -183,12 +195,16 @@
             <h3>Social</h3>
             <ul class="icons alt">
               <li>
-                <a href="#" class="icon brands alt fa-linkedin"
+                <a
+                  href="https://www.linkedin.com/in/simon-justsen-19b3951b6/"
+                  class="icon brands alt fa-linkedin"
                   ><span class="label">LinkedIn</span></a
                 >
               </li>
               <li>
-                <a href="#" class="icon brands alt fa-github"
+                <a
+                  href="https://github.com/SimonJustsen3001/"
+                  class="icon brands alt fa-github"
                   ><span class="label">GitHub</span></a
                 >
               </li>
@@ -200,7 +216,6 @@
       <!-- Copyright -->
       <div id="copyright">
         <ul>
-          <li>&copy; Untitled</li>
           <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
         </ul>
       </div>
