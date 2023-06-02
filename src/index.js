@@ -7,34 +7,26 @@ const firstName = "Simon";
 const lastName = "Justsen";
 
 const introText = document.querySelector(".intro-text");
-const showcaseFrontendWrapper = document.querySelector(
-  ".showcase-frontend-technologies"
-);
+
 const aboutMeWrapper = document.querySelector(".about-me-wrapper");
 const wave = document.querySelector(".wave");
 
-let tlFrontPage = gsap.timeline();
-let tlWave = gsap.timeline();
-tlWave.add(gsap.to(wave, { duration: 0.3, rotateZ: -60 }));
-tlWave.add(gsap.to(wave, { duration: 0.3, rotateZ: -15 }));
-tlWave.repeat(2);
-tlFrontPage.add(gsap.from(introText, { opacity: 0, duration: 0.5, delay: 2 }));
-tlFrontPage.add(
-  gsap.from(aboutMeWrapper, { opacity: 0, y: 40, duration: 0.5 })
-);
-tlFrontPage.add(gsap.from(wave, { opacity: 0, duration: 0.5 }));
-tlFrontPage.add(tlWave);
+let tlWave = gsap
+  .timeline({ repeat: 1 })
+  .add(gsap.to(wave, { duration: 0.3, rotateZ: -60 }))
+  .add(gsap.to(wave, { duration: 0.3, rotateZ: -15 }));
 
-window.onload = function () {
-  const stylesheet = document.styleSheets[0];
+let tlRepeatWave = gsap
+  .timeline({ repeat: -1, repeatDelay: 5 })
+  .add(tlWave)
+  .repeat(-1);
 
-  const calculateGridSpacing = (width) => {
-    const iconSize = Math.floor(width / 3 - 30);
-    let rule = `.icons { height: ${iconSize}px }`;
-    stylesheet.insertRule(rule);
-  };
-  calculateGridSpacing(showcaseFrontendWrapper.offsetWidth);
-};
+let tlFrontPage = gsap
+  .timeline()
+  .add(gsap.from(introText, { opacity: 0, duration: 0.5, delay: 2 }))
+  .add(gsap.from(aboutMeWrapper, { opacity: 0, y: 40, duration: 0.5 }))
+  .add(gsap.from(wave, { opacity: 0, duration: 0.5 }))
+  .add(tlRepeatWave);
 
 const createLetters = (name, wrapper) => {
   name.split("").forEach((letter) => {
