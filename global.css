@@ -9,6 +9,13 @@
   --color-3-transparent: rgba(233, 196, 106, 0.5);
   --color-4-transparent: rgba(244, 162, 97, 0.5);
   --color-5-transparent: rgba(231, 111, 81, 0.5);
+  --font-size-largest: 80px;
+  --font-size-larger: 60px;
+  --font-size-large: 50px;
+  --font-size-big: 40px;
+  --font-size-medium: 30px;
+  --font-size-small: 24px;
+  --font-size-smallest: 18px;
 }
 
 html {
