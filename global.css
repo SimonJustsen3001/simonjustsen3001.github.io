@@ -1,0 +1,23 @@
+:root {
+  --color-1: rgb(22, 24, 29);
+  --color-2: rgb(18, 20, 24);
+  --color-3: rgb(233, 196, 106);
+  --color-4: rgb(244, 162, 97);
+  --color-5: rgb(231, 111, 81);
+  --color-1-transparent: rgba(22, 24, 29, 0.5);
+  --color-2-transparent: rgba(42, 157, 143, 0.5);
+  --color-3-transparent: rgba(233, 196, 106, 0.5);
+  --color-4-transparent: rgba(244, 162, 97, 0.5);
+  --color-5-transparent: rgba(231, 111, 81, 0.5);
+}
+
+html {
+  font-family: "Rubik Mono One", sans-serif;
+  color: var(--color-4);
+}
+
+body {
+  background-color: var(--color-1);
+  margin: 0;
+  overflow-x: hidden;
+}
