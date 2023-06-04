@@ -2,7 +2,8 @@
   --color-1: rgb(237, 238, 247);
   --color-2: rgb(228, 251, 255);
   --color-3: rgb(140, 104, 255);
-  --color-4: rgb(120, 104, 230);
+  --color-4: #7868e6;
+  --color-5: rgb(49, 186, 205);
 }
 
 html,
@@ -28,7 +29,7 @@ body {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  max-width: 300px;
+  max-width: 320px;
 }
 
 .image-wrapper {
@@ -65,9 +66,11 @@ body {
 
 .icon,
 .info-text,
-.link {
-  margin-left: 15px;
-  color: black;
+.link,
+.programming-language-name {
+  margin: 0;
+  margin-left: 10px;
+  color: white;
   text-decoration: none;
 }
 
@@ -79,12 +82,62 @@ body {
   color: rgb(10, 10, 163);
 }
 
+.knowledge-text,
+.some-knowledge-text {
+  font-size: 20px;
+  font-weight: 600;
+  width: 300px;
+  text-align: center;
+  padding: 15px 0px;
+  margin: 10px 0 0 0;
+  color: var(--color-2);
+}
+
+.knowledge-text {
+  border-top: var(--color-2) 2px solid;
+}
+
+.programming-language-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 10px;
+}
+
+.programming-language {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
 .cv-content {
+  position: relative;
   display: flex;
   flex-direction: column;
   flex: 1;
   background-color: var(--color-2);
-  border: var(--color-4) 2px solid;
+  border-right: var(--color-4) 2px solid;
+  border-top: var(--color-4) 2px solid;
+  border-bottom: var(--color-4) 2px solid;
+}
+
+.language-button {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  border: none;
+  cursor: pointer;
+  transition: scale 0.3s;
+}
+
+.language-button:hover {
+  box-shadow: none;
+  background-color: transparent;
+  scale: 1.1;
+}
+
+.language-icon {
+  height: 40px;
+  width: 60px;
 }
 
 .about-me {
@@ -93,18 +146,18 @@ body {
   width: 100%;
   max-width: 100%;
   height: auto;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   color: var(--color-4);
 }
 
-.name,
 .description-wrapper {
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: 0 10px;
 }
 
 .name {
-  font-size: 60px;
+  margin: 20px 10px;
+  align-self: flex-start;
+  font-size: 50px;
 }
 
 .description-wrapper {
@@ -128,13 +181,14 @@ body {
 .education-wrapper {
   width: 100%;
   height: auto;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   display: flex;
   flex-direction: column;
 }
 
 .work-text,
 .education-text {
+  font-weight: 800;
   font-size: 30px;
   padding-bottom: 10px;
   margin: 0px 10px;
@@ -166,7 +220,8 @@ body {
 }
 
 .work-title,
-.education-1-title .education-2-title {
+.education-1-title,
+.education-2-title {
   font-size: 24px;
 }
 
@@ -174,8 +229,11 @@ body {
 .education-year {
   font-size: 18px;
   background-color: var(--color-4);
+  color: white;
+  width: 170px;
   padding: 4px;
   border-radius: 4px;
+  white-space: nowrap;
 }
 
 .work-place,
@@ -189,4 +247,13 @@ body {
 .education-status {
   color: black;
   font-style: normal;
+}
+
+@media print {
+  .language-button {
+    display: none;
+  }
+  .name {
+    align-self: center;
+  }
 }
