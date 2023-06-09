@@ -65,7 +65,7 @@ const updateAddress = () => {
       both professionally and in my free time as I explore new programming projects.";
     aboutMeText.innerHTML = "About me";
     workText.innerHTML = "Work Experience";
-    workTitle.innerHTML = "3. Key Carrier - Full time";
+    workTitle.innerHTML = "3. Key Holder - Full time";
     workValue1.innerHTML = "Work together for a common goal";
     workValue2.innerHTML = "Solving problems under pressure";
     workValue3.innerHTML = "Responsible for training new employees";
