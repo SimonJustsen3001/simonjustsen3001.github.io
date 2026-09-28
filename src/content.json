@@ -1,0 +1,128 @@
+{
+  "da": {
+    "flag": "public/dk.svg",
+    "knowledgeText": "Jeg har arbejdet med",
+    "someKnowledgeText": "Jeg har selv rodet med",
+    "knowledge": [
+      "AL (Database)",
+      "Javascript",
+      "TypeScript",
+      "Business Central"
+    ],
+    "someKnowledge": [
+      "React",
+      "React Native",
+      "C",
+      "C# (DotNet)",
+      "Docker",
+      "Python"
+    ],
+    "name": "",
+    "aboutMe": "Om mig",
+    "description": "Som en passioneret softwareudvikler er jeg drevet af at løse komplekse problemer og forbedre mine evner. Min positive energi og interesse for software supplerer min tekniske dygtighed både professionelt og i min fritid, når jeg udforsker nye programmeringsprojekter.",
+    "workTitle": "Erfaring",
+    "educationTitle": "Uddannelse",
+    "work": [
+      {
+        "title": "3. Nøglebærer",
+        "year": "Sep 2017 - Jul 2019",
+        "place": "Jem & Fix, Ølstykke"
+      },
+      {
+        "title": "Graduate",
+        "year": "Sep 2023 - Feb 2024",
+        "place": "JCD"
+      },
+      {
+        "title": "Junior Business Central Udvikler",
+        "year": "Mar 2024 - Mar 2025",
+        "place": "JCD",
+        "points": [
+          "Fokus på finans",
+          "Primær udvikler på inhouse produkt",
+          "Oplæring af nye graduates"
+        ]
+      },
+      {
+        "title": "Business Central Udvikler",
+        "year": "Apr 2025 - Nu",
+        "place": "JCD",
+        "points": [
+          "Fokus på finans",
+          "Primær udvikler på inhouse produkt",
+          "Opstart af A.I. udvikling"
+        ]
+      }
+    ],
+    "education": [
+      {
+        "title": "Bachelor i Datalogi",
+        "year": "Sep 2019 - Jul 2022",
+        "place": "Aalborg Universitet"
+      }
+    ]
+  },
+  "en": {
+    "flag": "public/gb.svg",
+    "knowledgeText": "I have worked with",
+    "someKnowledgeText": "On my own I have dabbled in",
+    "knowledge": [
+      "AL (Database)",
+      "Business Central",
+      "Javascript",
+      "TypeScript"
+    ],
+    "someKnowledge": [
+      "React",
+      "React Native",
+      "C",
+      "C# (DotNet)",
+      "Docker",
+      "Python"
+    ],
+    "name": "",
+    "aboutMe": "About me",
+    "description": "As a passionate software developer, I am driven to solve complex problems and improve my skills. My positive energy and interest in software complements my technical proficiency, both professionally and in my free time as I explore new programming projects.",
+    "workTitle": "Work Experience",
+    "educationTitle": "Education",
+    "work": [
+      {
+        "title": "3. Key Holder",
+        "year": "Sep 2017 - Jul 2019",
+        "place": "Jem & Fix, Ølstykke"
+      },
+      {
+        "title": "Graduate",
+        "year": "Sep 2023 - Feb 2024",
+        "place": "JCD"
+      },
+      {
+        "title": "Junior Business Central Developer",
+        "year": "Mar 2024 - Mar 2025",
+        "place": "JCD",
+        "points": [
+          "Focus on finance",
+          "Primary developer on in-house product",
+          "Training new graduates"
+        ]
+      },
+      {
+        "title": "Business Central Developer",
+        "year": "Apr 2025 - Now",
+        "place": "JCD",
+        "points": [
+          "Focus on finance",
+          "Primary developer on in-house product",
+          "Kick-started A.I. development"
+        ]
+      }
+    ],
+    "education": [
+      {
+        "title": "Bachelor's degree in Computer Science",
+        "year": "Sep 2019 - Jul 2022",
+        "place": "Aalborg University"
+      }
+    ]
+  }
+}

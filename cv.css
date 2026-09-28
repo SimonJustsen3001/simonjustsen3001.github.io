@@ -1,8 +1,8 @@
 :root {
   --color-1: rgb(237, 238, 247);
-  --color-2: rgb(228, 251, 255);
-  --color-3: rgb(140, 104, 255);
-  --color-4: rgb(120, 104, 230);
+  --color-2: rgb(227, 227, 227);
+  --color-3: rgb(42, 128, 214);
+  --color-4: rgb(27, 98, 168);
   --color-5: rgb(49, 186, 205);
 }
 
@@ -36,16 +36,20 @@ body {
   margin-top: 20px;
   position: relative;
   width: 250px;
-  height: 250px;
+  height: 300px;
   border: var(--color-4) 2px solid;
   border-radius: 50%;
   overflow: hidden;
+  background-color: rgb(210, 208, 202);
 }
 
 .image {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  height: auto;
+  transform: translate(-50%, -50%);
 }
 
 .contact-info {
@@ -66,8 +70,7 @@ body {
 
 .icon,
 .info-text,
-.link,
-.programming-language-name {
+.link {
   margin: 0;
   margin-left: 10px;
   color: white;
@@ -97,16 +100,19 @@ body {
   border-top: var(--color-2) 2px solid;
 }
 
-.programming-language-wrapper {
+.skill-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  row-gap: 10px;
+  column-gap: 20px;
+  row-gap: 8px;
+  width: 260px;
+  margin: 0;
+  padding-left: 20px;
+  color: white;
 }
 
-.programming-language {
-  display: flex;
-  align-items: center;
-  width: 100%;
+.skill {
+  font-size: 18px;
 }
 
 .cv-content {
@@ -168,17 +174,16 @@ body {
 
 .about-text {
   margin: 4px 0;
-  font-size: 28px;
+  font-size: 24px;
 }
 
 .description {
   margin: 0;
-  font-size: 22px;
+  font-size: 18px;
   color: black;
 }
 
-.work-wrapper,
-.education-wrapper {
+.wrapper {
   width: 100%;
   height: auto;
   padding-bottom: 10px;
@@ -186,62 +191,62 @@ body {
   flex-direction: column;
 }
 
-.work-text,
-.education-text {
+.text {
   font-weight: 800;
-  font-size: 30px;
+  font-size: 26px;
   padding-bottom: 10px;
   margin: 0px 10px;
   border-bottom: var(--color-4) solid 2px;
   color: var(--color-4);
 }
 
-.work,
-.education {
+.entry {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 
-.work-title-year-wrapper,
-.education-title-year-wrapper {
+.title-year-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 0px 10px;
 }
 
-.work-title,
-.work-year,
-.education-1-title,
-.education-2-title,
-.education-year {
-  margin: 15px 5px;
+.title,
+.title-year {
+  margin: 5px 5px;
 }
 
-.work-title,
-.education-1-title,
-.education-2-title {
-  font-size: 24px;
+.title {
+  font-size: 16px;
 }
 
-.work-year,
-.education-year {
-  font-size: 18px;
+.title-year {
+  font-size: 16px;
   background-color: var(--color-4);
   color: white;
-  width: 170px;
+  min-width: 150px;
   padding: 4px;
   border-radius: 4px;
   white-space: nowrap;
 }
 
-.work-place,
-.education-place {
-  font-size: 20px;
+.title-place {
+  font-size: 15px;
   margin: 0px 15px;
   color: var(--color-3);
   font-style: italic;
+}
+
+.title-points {
+  margin: 5px 15px 10px 15px;
+  padding-left: 20px;
+}
+
+.title-point {
+  font-size: 15px;
+  margin: 2px 0;
 }
 
 .education-status {
@@ -253,6 +258,7 @@ body {
   .language-button {
     display: none;
   }
+
   .name {
     align-self: center;
   }
