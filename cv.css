@@ -93,7 +93,7 @@ body {
 
 .knowledge-text,
 .some-knowledge-text {
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 600;
   width: 300px;
   text-align: center;
@@ -118,7 +118,7 @@ body {
 }
 
 .skill {
-  font-size: 18px;
+  font-size: 17px;
 }
 
 .cv-content {

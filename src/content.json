@@ -7,7 +7,9 @@
       "AL (Database)",
       "Javascript",
       "TypeScript",
-      "Business Central"
+      "Business Central",
+      "Claude",
+      "Git"
     ],
     "someKnowledge": [
       "React",
@@ -70,7 +72,9 @@
       "AL (Database)",
       "Business Central",
       "Javascript",
-      "TypeScript"
+      "TypeScript",
+      "Claude",
+      "Git"
     ],
     "someKnowledge": [
       "React",
@@ -80,7 +84,7 @@
       "Docker",
       "Python"
     ],
-    "name": "",
+    "name": "Simon Justsen",
     "aboutMe": "About me",
     "description": "As a passionate software developer, I am driven to solve complex problems and improve my skills. My positive energy and interest in software complements my technical proficiency, both professionally and in my free time as I explore new programming projects.",
     "workTitle": "Work Experience",
