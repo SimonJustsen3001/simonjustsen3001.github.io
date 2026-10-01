@@ -67,6 +67,8 @@ const updateAddress = () => {
   setText(".some-knowledge-text", language.someKnowledgeText);
   renderSkills(".knowledge-list", language.knowledge);
   renderSkills(".some-knowledge-list", language.someKnowledge);
+  setText(".languages-text", language.languagesText);
+  renderSkills(".languages-list", language.languages);
   setText(".name", language.name);
   setText(".about-text", language.aboutMe);
   setText(".description", language.description);

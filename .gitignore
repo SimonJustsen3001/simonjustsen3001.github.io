@@ -1,2 +1,4 @@
 /node_modules/*
 /public/OldProfilePicture.jpg
+/cl.html
+/src/cl-content.js
